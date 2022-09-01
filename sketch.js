@@ -76,25 +76,25 @@ function setup() {
   world = engine.world;
   
   button = createImg('cut_btn.png');
-  button.position(80,30);
+  button.position(20,30);
   button.size(50,50);
   button.mouseClicked(drop);
 
   button2 = createImg("cut_btn.png");
-  button2.position(370,30);
+  button2.position(220,30);
   button2.size(50,50);
   button2.mouseClicked(drop2);
  
   button3 = createImg("cut_btn.png");
-  button3.position(350,120);
+  button3.position(220,120);
   button3.size(50,50);
   button3.mouseClicked(drop3);
   
 
-  blower = createImg("balloon.png");
+ /* blower = createImg("balloon.png");
   blower.position(10,250);
   blower.size(150,100);
-  blower.mouseClicked(airblow);
+  blower.mouseClicked(airblow);*/
 
   buttonMute = createImg("mute.png");
   buttonMute.position(440,20);
@@ -102,9 +102,9 @@ function setup() {
   buttonMute.mouseClicked(mute);
 
   
-  rope = new Rope(7,{x:90,y:30});
-  rope2 = new Rope(5,{x:380,y:30});
-  rope3 = new Rope(3,{x:360,y:120});
+  rope = new Rope(7,{x:30,y:30});
+  rope2 = new Rope(5,{x:245,y:30});
+  rope3 = new Rope(3,{x:245,y:120});
   ground = new Ground(200,canH,600,20);
 
   blink.frameDelay = 20;
